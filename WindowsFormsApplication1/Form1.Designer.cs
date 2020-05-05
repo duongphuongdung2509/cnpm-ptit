@@ -90,6 +90,7 @@
             // 
             // datePick
             // 
+            this.datePick.Enabled = false;
             this.datePick.Location = new System.Drawing.Point(59, 204);
             this.datePick.Name = "datePick";
             this.datePick.Size = new System.Drawing.Size(144, 20);
@@ -103,6 +104,7 @@
             this.txtGia.Size = new System.Drawing.Size(100, 20);
             this.txtGia.TabIndex = 10;
             this.txtGia.TextChanged += new System.EventHandler(this.txtGia_TextChanged);
+            this.txtGia.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtGia_KeyPress);
             // 
             // txtSl
             // 
@@ -110,6 +112,7 @@
             this.txtSl.Name = "txtSl";
             this.txtSl.Size = new System.Drawing.Size(100, 20);
             this.txtSl.TabIndex = 9;
+            this.txtSl.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtSl_KeyPress);
             // 
             // txtMaCP
             // 

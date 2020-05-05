@@ -1935,7 +1935,7 @@ namespace WindowsFormsApplication1.CHUNGKHOANDataSetTableAdapters {
             this._adapter.TableMappings.Add(tableMapping);
             this._adapter.DeleteCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.DeleteCommand.Connection = this.Connection;
-            this._adapter.DeleteCommand.CommandText = @"DELETE FROM [dbo].[LENHDAT] WHERE (([ID] = @Original_ID) AND ([MACP] = @Original_MACP) AND ((@IsNull_NGAYDAT = 1 AND [NGAYDAT] IS NULL) OR ([NGAYDAT] = @Original_NGAYDAT)) AND ([LOAIGD] = @Original_LOAIGD) AND ([LOAILENH] = @Original_LOAILENH) AND ([SOLUONG] = @Original_SOLUONG) AND ([GIADAT] = @Original_GIADAT) AND ((@IsNull_TRANGTHAILENH = 1 AND [TRANGTHAILENH] IS NULL) OR ([TRANGTHAILENH] = @Original_TRANGTHAILENH)))";
+            this._adapter.DeleteCommand.CommandText = @"DELETE FROM [LENHDAT] WHERE (([ID] = @Original_ID) AND ([MACP] = @Original_MACP) AND ((@IsNull_NGAYDAT = 1 AND [NGAYDAT] IS NULL) OR ([NGAYDAT] = @Original_NGAYDAT)) AND ([LOAIGD] = @Original_LOAIGD) AND ([LOAILENH] = @Original_LOAILENH) AND ([SOLUONG] = @Original_SOLUONG) AND ([GIADAT] = @Original_GIADAT) AND ((@IsNull_TRANGTHAILENH = 1 AND [TRANGTHAILENH] IS NULL) OR ([TRANGTHAILENH] = @Original_TRANGTHAILENH)))";
             this._adapter.DeleteCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_ID", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ID", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_MACP", global::System.Data.SqlDbType.Char, 0, global::System.Data.ParameterDirection.Input, 0, 0, "MACP", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
@@ -1949,7 +1949,7 @@ namespace WindowsFormsApplication1.CHUNGKHOANDataSetTableAdapters {
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_TRANGTHAILENH", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "TRANGTHAILENH", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.InsertCommand.Connection = this.Connection;
-            this._adapter.InsertCommand.CommandText = @"INSERT INTO [dbo].[LENHDAT] ([MACP], [NGAYDAT], [LOAIGD], [LOAILENH], [SOLUONG], [GIADAT], [TRANGTHAILENH]) VALUES (@MACP, @NGAYDAT, @LOAIGD, @LOAILENH, @SOLUONG, @GIADAT, @TRANGTHAILENH);
+            this._adapter.InsertCommand.CommandText = @"INSERT INTO [LENHDAT] ([MACP], [NGAYDAT], [LOAIGD], [LOAILENH], [SOLUONG], [GIADAT], [TRANGTHAILENH]) VALUES (@MACP, @NGAYDAT, @LOAIGD, @LOAILENH, @SOLUONG, @GIADAT, @TRANGTHAILENH);
 SELECT ID, MACP, NGAYDAT, LOAIGD, LOAILENH, SOLUONG, GIADAT, TRANGTHAILENH FROM LENHDAT WHERE (ID = SCOPE_IDENTITY())";
             this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@MACP", global::System.Data.SqlDbType.Char, 0, global::System.Data.ParameterDirection.Input, 0, 0, "MACP", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
@@ -1961,7 +1961,7 @@ SELECT ID, MACP, NGAYDAT, LOAIGD, LOAILENH, SOLUONG, GIADAT, TRANGTHAILENH FROM 
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@TRANGTHAILENH", global::System.Data.SqlDbType.NVarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "TRANGTHAILENH", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.UpdateCommand.Connection = this.Connection;
-            this._adapter.UpdateCommand.CommandText = @"UPDATE [dbo].[LENHDAT] SET [MACP] = @MACP, [NGAYDAT] = @NGAYDAT, [LOAIGD] = @LOAIGD, [LOAILENH] = @LOAILENH, [SOLUONG] = @SOLUONG, [GIADAT] = @GIADAT, [TRANGTHAILENH] = @TRANGTHAILENH WHERE (([ID] = @Original_ID) AND ([MACP] = @Original_MACP) AND ((@IsNull_NGAYDAT = 1 AND [NGAYDAT] IS NULL) OR ([NGAYDAT] = @Original_NGAYDAT)) AND ([LOAIGD] = @Original_LOAIGD) AND ([LOAILENH] = @Original_LOAILENH) AND ([SOLUONG] = @Original_SOLUONG) AND ([GIADAT] = @Original_GIADAT) AND ((@IsNull_TRANGTHAILENH = 1 AND [TRANGTHAILENH] IS NULL) OR ([TRANGTHAILENH] = @Original_TRANGTHAILENH)));
+            this._adapter.UpdateCommand.CommandText = @"UPDATE [LENHDAT] SET [MACP] = @MACP, [NGAYDAT] = @NGAYDAT, [LOAIGD] = @LOAIGD, [LOAILENH] = @LOAILENH, [SOLUONG] = @SOLUONG, [GIADAT] = @GIADAT, [TRANGTHAILENH] = @TRANGTHAILENH WHERE (([ID] = @Original_ID) AND ([MACP] = @Original_MACP) AND ((@IsNull_NGAYDAT = 1 AND [NGAYDAT] IS NULL) OR ([NGAYDAT] = @Original_NGAYDAT)) AND ([LOAIGD] = @Original_LOAIGD) AND ([LOAILENH] = @Original_LOAILENH) AND ([SOLUONG] = @Original_SOLUONG) AND ([GIADAT] = @Original_GIADAT) AND ((@IsNull_TRANGTHAILENH = 1 AND [TRANGTHAILENH] IS NULL) OR ([TRANGTHAILENH] = @Original_TRANGTHAILENH)));
 SELECT ID, MACP, NGAYDAT, LOAIGD, LOAILENH, SOLUONG, GIADAT, TRANGTHAILENH FROM LENHDAT WHERE (ID = @ID)";
             this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@MACP", global::System.Data.SqlDbType.Char, 0, global::System.Data.ParameterDirection.Input, 0, 0, "MACP", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
@@ -1997,8 +1997,9 @@ SELECT ID, MACP, NGAYDAT, LOAIGD, LOAILENH, SOLUONG, GIADAT, TRANGTHAILENH FROM 
             this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT ID, MACP, NGAYDAT, LOAIGD, LOAILENH, SOLUONG, GIADAT, TRANGTHAILENH FROM d" +
-                "bo.LENHDAT";
+            this._commandCollection[0].CommandText = "SELECT        ID, MACP, NGAYDAT, LOAIGD, LOAILENH, SOLUONG, GIADAT, TRANGTHAILENH" +
+                "\r\nFROM            LENHDAT\r\nWHERE        (NGAYDAT >= CAST(GETDATE() AS date)) AND" +
+                " (NGAYDAT < CAST(GETDATE() + 1 AS date))";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }
         
@@ -2411,7 +2412,7 @@ SELECT ID, MACP, NGAYDAT, LOAIGD, LOAILENH, SOLUONG, GIADAT, TRANGTHAILENH FROM 
             this._adapter.TableMappings.Add(tableMapping);
             this._adapter.DeleteCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.DeleteCommand.Connection = this.Connection;
-            this._adapter.DeleteCommand.CommandText = @"DELETE FROM [dbo].[LENHKHOP] WHERE (([IDKHOP] = @Original_IDKHOP) AND ((@IsNull_NGAYKHOP = 1 AND [NGAYKHOP] IS NULL) OR ([NGAYKHOP] = @Original_NGAYKHOP)) AND ((@IsNull_SOLUONGKHOP = 1 AND [SOLUONGKHOP] IS NULL) OR ([SOLUONGKHOP] = @Original_SOLUONGKHOP)) AND ((@IsNull_GIAKHOP = 1 AND [GIAKHOP] IS NULL) OR ([GIAKHOP] = @Original_GIAKHOP)) AND ([IDLENHDAT] = @Original_IDLENHDAT))";
+            this._adapter.DeleteCommand.CommandText = @"DELETE FROM [LENHKHOP] WHERE (([IDKHOP] = @Original_IDKHOP) AND ((@IsNull_NGAYKHOP = 1 AND [NGAYKHOP] IS NULL) OR ([NGAYKHOP] = @Original_NGAYKHOP)) AND ((@IsNull_SOLUONGKHOP = 1 AND [SOLUONGKHOP] IS NULL) OR ([SOLUONGKHOP] = @Original_SOLUONGKHOP)) AND ((@IsNull_GIAKHOP = 1 AND [GIAKHOP] IS NULL) OR ([GIAKHOP] = @Original_GIAKHOP)) AND ([IDLENHDAT] = @Original_IDLENHDAT))";
             this._adapter.DeleteCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_IDKHOP", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "IDKHOP", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_NGAYKHOP", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "NGAYKHOP", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
@@ -2423,10 +2424,9 @@ SELECT ID, MACP, NGAYDAT, LOAIGD, LOAILENH, SOLUONG, GIADAT, TRANGTHAILENH FROM 
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_IDLENHDAT", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "IDLENHDAT", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.InsertCommand.Connection = this.Connection;
-            this._adapter.InsertCommand.CommandText = "INSERT INTO [dbo].[LENHKHOP] ([NGAYKHOP], [SOLUONGKHOP], [GIAKHOP], [IDLENHDAT]) " +
-                "VALUES (@NGAYKHOP, @SOLUONGKHOP, @GIAKHOP, @IDLENHDAT);\r\nSELECT IDKHOP, NGAYKHOP" +
-                ", SOLUONGKHOP, GIAKHOP, IDLENHDAT FROM LENHKHOP WHERE (IDKHOP = SCOPE_IDENTITY()" +
-                ")";
+            this._adapter.InsertCommand.CommandText = "INSERT INTO [LENHKHOP] ([NGAYKHOP], [SOLUONGKHOP], [GIAKHOP], [IDLENHDAT]) VALUES" +
+                " (@NGAYKHOP, @SOLUONGKHOP, @GIAKHOP, @IDLENHDAT);\r\nSELECT IDKHOP, NGAYKHOP, SOLU" +
+                "ONGKHOP, GIAKHOP, IDLENHDAT FROM LENHKHOP WHERE (IDKHOP = SCOPE_IDENTITY())";
             this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@NGAYKHOP", global::System.Data.SqlDbType.DateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "NGAYKHOP", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@SOLUONGKHOP", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "SOLUONGKHOP", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
@@ -2434,7 +2434,7 @@ SELECT ID, MACP, NGAYDAT, LOAIGD, LOAILENH, SOLUONG, GIADAT, TRANGTHAILENH FROM 
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IDLENHDAT", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "IDLENHDAT", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.UpdateCommand.Connection = this.Connection;
-            this._adapter.UpdateCommand.CommandText = @"UPDATE [dbo].[LENHKHOP] SET [NGAYKHOP] = @NGAYKHOP, [SOLUONGKHOP] = @SOLUONGKHOP, [GIAKHOP] = @GIAKHOP, [IDLENHDAT] = @IDLENHDAT WHERE (([IDKHOP] = @Original_IDKHOP) AND ((@IsNull_NGAYKHOP = 1 AND [NGAYKHOP] IS NULL) OR ([NGAYKHOP] = @Original_NGAYKHOP)) AND ((@IsNull_SOLUONGKHOP = 1 AND [SOLUONGKHOP] IS NULL) OR ([SOLUONGKHOP] = @Original_SOLUONGKHOP)) AND ((@IsNull_GIAKHOP = 1 AND [GIAKHOP] IS NULL) OR ([GIAKHOP] = @Original_GIAKHOP)) AND ([IDLENHDAT] = @Original_IDLENHDAT));
+            this._adapter.UpdateCommand.CommandText = @"UPDATE [LENHKHOP] SET [NGAYKHOP] = @NGAYKHOP, [SOLUONGKHOP] = @SOLUONGKHOP, [GIAKHOP] = @GIAKHOP, [IDLENHDAT] = @IDLENHDAT WHERE (([IDKHOP] = @Original_IDKHOP) AND ((@IsNull_NGAYKHOP = 1 AND [NGAYKHOP] IS NULL) OR ([NGAYKHOP] = @Original_NGAYKHOP)) AND ((@IsNull_SOLUONGKHOP = 1 AND [SOLUONGKHOP] IS NULL) OR ([SOLUONGKHOP] = @Original_SOLUONGKHOP)) AND ((@IsNull_GIAKHOP = 1 AND [GIAKHOP] IS NULL) OR ([GIAKHOP] = @Original_GIAKHOP)) AND ([IDLENHDAT] = @Original_IDLENHDAT));
 SELECT IDKHOP, NGAYKHOP, SOLUONGKHOP, GIAKHOP, IDLENHDAT FROM LENHKHOP WHERE (IDKHOP = @IDKHOP)";
             this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@NGAYKHOP", global::System.Data.SqlDbType.DateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "NGAYKHOP", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
@@ -2465,7 +2465,9 @@ SELECT IDKHOP, NGAYKHOP, SOLUONGKHOP, GIAKHOP, IDLENHDAT FROM LENHKHOP WHERE (ID
             this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT IDKHOP, NGAYKHOP, SOLUONGKHOP, GIAKHOP, IDLENHDAT FROM dbo.LENHKHOP";
+            this._commandCollection[0].CommandText = "SELECT        IDKHOP, NGAYKHOP, SOLUONGKHOP, GIAKHOP, IDLENHDAT\r\nFROM            " +
+                "LENHKHOP\r\nWHERE        (NGAYKHOP >= CAST(GETDATE() AS date)) AND (NGAYKHOP < CAS" +
+                "T(GETDATE() + 1 AS date))";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }
         
